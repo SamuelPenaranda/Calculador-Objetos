@@ -1,0 +1,12 @@
+package index;
+
+/**
+ *
+ * @author SALA
+ */
+public interface CalculadoraVolu {
+    public double cubo(int ladou, int ladodo,int ladotre);
+    public double esfera(double pi,double radio);
+    public double cono(double pi, double radio,double altura);
+    
+}
