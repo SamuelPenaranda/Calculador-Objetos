@@ -1,0 +1,13 @@
+package index;
+
+/**
+ *
+ * @author SALA
+ */
+public interface CalculadoraGeom {
+     public int rect(int altura,int base);
+     public int cuad(int numerouno,int numerodo);
+     public int triang(int numerouno, int numerodo);
+     public double circ(double radio, double pi);
+    
+}
