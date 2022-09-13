@@ -1,0 +1,23 @@
+
+package index;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author SALA
+ */
+public class Index {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        String botones[]={"Calculadora Geometrica","Calculadora Volumetrica"};
+        int vent=JOptionPane.showOptionDialog(null, "¿Qué calculadora desea utilizar?", "Calculadora avanzada", 0, 0, null, botones, botones[0]);
+        if(vent==0){JOptionPane.showInputDialog(vent);}
+
+        // TODO code application logic here
+    }
+    
+}
