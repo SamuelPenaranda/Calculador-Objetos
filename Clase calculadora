@@ -1,0 +1,55 @@
+package index;
+
+/**
+ *
+ * @author SALA
+ */
+public class Calcu implements CalculadoraGeom, CalculadoraVolu {
+
+    @Override
+    public int rect(int altura, int base) {
+    int h=altura*base;
+    return h;}
+
+    @Override
+    public int cuad(int numerouno, int numerodo) {
+    int ar=numerouno*numerodo;
+    return ar;
+    }
+
+    @Override
+    public int triang(int numerouno, int numerodo) {
+    int ar=(numerouno*numerodo)/2;
+    return ar;
+    }
+ 
+        @Override
+    public double circ(double radio, double pi) {
+    double ret=pi*(Math.pow(radio, 2));
+    return ret;
+     }
+
+    @Override
+    public double cubo(int ladou, int ladodo, int ladotre) {
+    double cal=ladou*ladodo*ladotre;
+    return cal;
+    }
+
+    @Override
+    public double esfera(double pi, double radio) {
+    double cua=4/3;
+    double rad=Math.pow(radio, 2);
+    double vol=cua*pi*rad;
+    return vol;
+    }
+
+    @Override
+    public double cono(double pi, double radio, double altura) {
+    double vol=(1/3)*pi*(Math.pow(radio, 2))*altura;
+    return vol;
+    }
+
+
+
+    
+}
